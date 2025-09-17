@@ -1,0 +1,19 @@
+{
+  "name": "Virtue's crash fixes",
+  "author": "virtue",
+  "contact": "viwty@discord",
+	"blt_version": 2,	
+  "version": "1.3",
+	"updates": [
+		{
+			"identifier": "virtues-crash-fixes",
+			"host": {
+				"meta": "https://raw.githubusercontent.com/viw-ty/payday-fixes/master/meta.json"
+			}
+		}
+	],
+  "hooks": [
+    { "hook_id": "lib/managers/menumanager", "script_path": "src/main.lua" },
+    { "hook_id": "lib/network/matchmaking/networkmatchmakingepic", "script_path": "src/crashnet.lua" }
+  ]
+}
