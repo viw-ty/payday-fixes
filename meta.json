@@ -1,7 +1,7 @@
 [
   {
     "ident": "virtues-crash-fixes",
-    "version": "1.4",
+    "version": "1.5",
     "patchnotes_url": "https://github.com/viw-ty/payday-fixes/blob/master/CHANGELOG",
     "download_url": "https://github.com/viw-ty/payday-fixes/archive/refs/heads/master.zip"
   }
