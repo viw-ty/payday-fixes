@@ -10,11 +10,25 @@ local defaults = {
 }
 
 function NetworkMatchMakingEPIC:is_server_ok(fo, room, attributes, invite)
+  local bully = false
+
   for k, v in pairs(attributes) do
-    if v == -2000 then attributes[k] = defaults[k] end
+    if v == -2000 then
+      if not bully then
+        bully = true
+        room.owner_name = "BULLY ME " .. room.owner_name
+      end
+      attributes[k] = defaults[k]
+    end
   end
   for k, v in pairs(attributes.numbers) do
-    if v == -2000 then attributes.numbers[k] = default_numbers[k] end
+    if v == -2000 then
+      if not bully then
+        bully = true
+        room.owner_name = "BULLY ME " .. room.owner_name
+      end
+      attributes.numbers[k] = default_numbers[k]
+    end
   end
 
   return orig(self, fo, room, attributes, invite)
