@@ -1,12 +1,12 @@
 {
-  "name": "Virtue's crash fixes",
+  "name": "Virtue's Engine Fixes",
   "author": "virtue",
   "contact": "viwty@discord",
-	"blt_version": 2,	
+  "blt_version": 2,
   "version": "1.5",
 	"updates": [
 		{
-			"identifier": "virtues-crash-fixes",
+			"identifier": "virtues-engine-fixes",
 			"host": {
 				"meta": "https://raw.githubusercontent.com/viw-ty/payday-fixes/master/meta.json"
 			}
